@@ -5,9 +5,9 @@ Original idea from Felo Couto
 
 Hope you'll find useful!
 
-<a href="https://youtu.be/AnBly9F83Wk
-" target="_blank"><img src="http://img.youtube.com/AnBly9F83Wk/5.jpg"
-alt="Time to meal video" width="240" height="180" border="10" /></a>
+<a href="https://youtu.be/AnBly9F83Wk" target="_blank">
+<img src="http://img.youtube.com/AnBly9F83Wk/0.jpg"
+alt="Preview video" width="240" height="180" border="10" /></a>
 
 Made by Julián Caro Linares
 
