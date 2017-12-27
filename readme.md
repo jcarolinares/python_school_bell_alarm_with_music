@@ -6,7 +6,7 @@ Original idea from Felo Couto
 Hope you'll find useful!
 
 <a href="https://youtu.be/AnBly9F83Wk" target="_blank">
-<img src="http://img.youtube.com/AnBly9F83Wk/0.jpg"
+<img src="http://img.youtube.com/AnBly9F83Wk/5.jpg"
 alt="Preview video" width="240" height="180" border="10" /></a>
 
 Made by Julián Caro Linares
@@ -14,7 +14,7 @@ Made by Julián Caro Linares
 * email: jcarolinares@gmail.com
 * twitter: @jcarolinares
 
-#How to use
+# How to use
 Python version and libraries:
 * Python 3
 * Pygame
@@ -37,9 +37,9 @@ Now executes the python program "school_bell.py" using python3:
 
 * Put the hour (example: 14)
 
-*Put the minute (example: 10)
+* Put the minute (example: 10)
 
-*Put the play time of the song in seconds (example: 30)
+* Put the play time of the song in seconds (example: 30)
 
 * By default the fadeout effect will be two seconds, but you can change this fadeout time inside the code (Alarm.self.fadeout)
 

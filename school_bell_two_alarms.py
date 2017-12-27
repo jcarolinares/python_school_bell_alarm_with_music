@@ -26,10 +26,12 @@ import pygame #For playing a wav sound file
 
 
 class Alarm():
-    def __init__(self, hours, minutes,music_time):
+    def __init__(self, hours, minutes,hours_2, minutes_2,music_time):
         super(Alarm, self).__init__()
         self.hours = int(hours)
         self.minutes = int(minutes)
+        self.hours_2 = int(hours_2)
+        self.minutes_2 = int(minutes_2)
         self.music_time=int(music_time)
         self.fadeout=2000
         #self.keep_running = True
@@ -38,7 +40,7 @@ class Alarm():
 
             while True:
                 now = time.localtime()
-                if (now.tm_hour == self.hours and now.tm_min == self.minutes):
+                if ((now.tm_hour == self.hours and now.tm_min == self.minutes) or (now.tm_hour == self.hours_2 and now.tm_min == self.minutes_2)):
                     print("\n\nBELL TIME!!!\n\n")
                     pygame.mixer.init()
                     sound = pygame.mixer.Sound("music.wav")
@@ -54,11 +56,16 @@ def main():
 
     alarm_HH = input("\n\nEnter the hour you want to play the bell: \n\n")#Put here directly the hours if you want alarm_HH=14
     alarm_MM = input("\n\nEnter the minute you want to play the bell: \n\n") #Put here directly the minutes if you want alarm_MM=10
-    music_time=input("\n\nEnter the number of seconds that you want to play the music file\n\n")
 
     print("\n\nYou'll be saved by the bell at: " + str(alarm_HH) +" : "+ str(alarm_MM) +"\n\n")
 
-    alarm = Alarm(alarm_HH, alarm_MM,music_time)
+    alarm_HH_2 = input("\n\nEnter the hour you want to play the bell for the second time: \n\n")#Put here directly the hours if you want alarm_HH=14
+    alarm_MM_2 = input("\n\nEnter the minute you want to play the bell for the second time: \n\n") #Put here directly the minutes if you want alarm_MM=10
+    music_time=input("\n\nEnter the number of seconds that you want to play the music file\n\n")
+
+    print("\n\nYou'll be saved by the second bell at: " + str(alarm_HH_2) +" : "+ str(alarm_MM_2) +"\n\n")
+
+    alarm = Alarm(alarm_HH, alarm_MM,alarm_HH_2,alarm_MM_2,music_time)
     alarm.run()
 
 
